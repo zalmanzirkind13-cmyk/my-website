@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="navbar">
+
+  <div class="nav-left">
+    <div class="logo">MTF Leather Works</div>
+  </div>
+
+  <nav class="nav-center">
+    <a href="#">Home</a>
+
+    <div class="dropdown">
+      <a href="#">Shop ▾</a>
+      <div class="dropdown-menu">
+        <a href="prices.html">Prices</a>
+        <a href="products.html">Products</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">About ▾</a>
+      <div class="dropdown-menu">
+        <a href="info.html">Info</a>
+
+      </div>
+    </div>
+
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="nav-right">
+    <button class="menu-btn">☰</button>
+  </div>
+
+</header>
+
+<!-- PAGE CONTENT -->
+
+<section class="content">
+
+  <h1 class="title">MTF LEATHER WORKS</h1>
+
+  <p class="about-paragraph">
+    MTF Leather Works specializes in crafting high-quality, handmade leather products designed with both durability and style in mind. Founded by Moshe Tzvi Fine, the company has built its reputation on a strong commitment to customer satisfaction, attention to detail, and consistently excellent craftsmanship. Every item produced reflects a dedication to quality materials and careful workmanship, ensuring that customers receive products they can rely on for years to come.
+  </p>
+
+  <p class="about-paragraph">
+    MTF Leather Works offers a wide and diverse range of products to meet many different needs. Their collection includes finely crafted wallets, elegant and durable watchbands, beautifully designed tefillin and tallis bags, as well as practical and meaningful tzedaka pouches. In addition to these, they continue to expand their offerings with more custom leather goods, allowing customers to find exactly what they are looking for.
+  </p>
+
+  <p class="about-paragraph">
+    Beyond creating new products, MTF Leather Works also provides professional repair services. They carefully restore and fix worn or damaged tallis and tefillin bags, bringing them back to life with skill and precision. They also offer specialized leather binding for siddurim, combining functionality with a refined, long-lasting finish.
+  </p>
+
+  <p class="about-paragraph">
+    All of this is provided at unmatched prices, making high-quality leather goods accessible without compromising on standards. With fast turnaround times and professional, reliable service, MTF Leather Works ensures that every customer receives not only a great product, but also a smooth and satisfying experience from start to finish.
+  </p>
+
+</section>
+
+<script>
+  const navbar = document.querySelector(".navbar");
+  const button = document.querySelector(".menu-btn");
+
+  button.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+  });
+</script>
+<section class="products">
+
+  <h2 class="section-title">Our Products</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="wallet.jpg" alt="Leather Wallet">
+      <p>Handcrafted Leather Wallet</p>
+    </div>
+
+    <div class="product-card">
+      <img src="pouch.png" alt="Tzedaka Pouch">
+      <p>Tzedaka Pouch</p>
+    </div>
+
+    <div class="product-card">
+      <img src="tallis.png" alt="Tallis Bag">
+      <p>Tallis / Tefillin Bag</p>
+    </div>
+
+  </div>
+
+</section>
+</body>
+</html>
